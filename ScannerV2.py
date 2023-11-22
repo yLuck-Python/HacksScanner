@@ -1,7 +1,7 @@
 import os
 import tkinter as tk
 
-# Mapeamento de nomes de processos para strings de programas ilegais
+# Mapeamento de nomes de processos para strings dos cheats
 mapeamento_processos = {
     "dps": [
         "string1",
@@ -268,7 +268,7 @@ mapeamento_processos = {
         "2041/10/06:22:15:05",
         "\\$pHcT$`LcL$x",
         "2079/02/13:00:40:14",
-        # Adicione mais strings ilegais relacionadas ao DPS aqui
+        # Divisão entre DPS e Explorer
     ],
     "explorer": [
         "7Clicker.exe"
@@ -379,7 +379,7 @@ mapeamento_processos = {
         "monoscript"
         "speedhack-i386"
 
-        # Adicione mais strings ilegais relacionadas ao Explorer aqui
+        # Divisão entre Explorer e Pcasvc
     ],
     "pcasvc": [
         "0x2dc000",
@@ -495,7 +495,7 @@ mapeamento_processos = {
         "0xc6000",
         "0x2c000",
 
-        # Adicione mais strings ilegais relacionadas ao Pcasvc aqui
+        # Divisão entre Pcasvc e dns
     ],
     "dns": [
         "neverfall.cc",
@@ -521,7 +521,7 @@ mapeamento_processos = {
         "entropy.club",
         "yukio.cc",
 
-        # Adicione mais strings ilegais relacionadas ao DNS aqui
+        # Divisão entre dns e javaw
     ],
     "javaw": [
         "p)AAA))",
@@ -738,11 +738,11 @@ mapeamento_processos = {
         "java.math.Roundingmode",
         "net.minecraft.forge.moads.Blck",
         
-        # Adicione mais strings ilegais relacionadas ao javaw aqui
+        # Fim das strings
     ]
 }
 
-# Mapeamento de strings de programas ilegais para nomes de programas
+# Mapeamento de strings de programas cheats e o seus nomes -> Podem estar errado pois tive que colocar tudo na mão.
 mapeamento_programas_ilegais = {
     "string1": "ProgramaIlegal1",
     #JAVAW
@@ -1470,9 +1470,9 @@ mapeamento_programas_ilegais = {
     # Adicione mais mapeamentos conforme necessário
 }
 
-    # Coloque aqui o código de verificação do arquivo (o mesmo código que você já tem)
+    # Espaço dedicado a verificação do arquivo caso necessário (função removida da V1 para a V2)
     
-# Função de verificação de arquivo (você pode manter sua lógica existente aqui)
+# Função de verificação de arquivo
 def verificar_arquivo(nome_processo, caminho_arquivo):
     try:
         with open(caminho_arquivo, "r", encoding="utf-8") as arquivo:
@@ -1521,7 +1521,7 @@ arquivo_entry = tk.Entry(janela)
 verificar_botao = tk.Button(janela, text="Verificar", command=verificar_botao_click)
 resultado_label = tk.Label(janela, text="Créditos ao ribeirozts e ao eternamente lembrado goku e todo ao restante da equipe pela ajuda.")
 
-# Posicionar widgets na janela usando grid (ou outros métodos de layout)
+# Posicionar widgets na janela usando grid
 processo_label.grid(row=0, column=0, sticky="w")
 processo_entry.grid(row=0, column=1)
 arquivo_label.grid(row=1, column=0, sticky="w")
